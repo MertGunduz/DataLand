@@ -19,8 +19,9 @@ namespace DataLand
 
         private void DataLand_MainMenu_Load(object sender, EventArgs e)
         {
+            // Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\u\Desktop\DataLand.accdb
+            // TODO: This line of code loads data into the 'dataLandDataSet.User_Table' table. You can move, or remove it, as needed.
             this.user_TableTableAdapter.Fill(this.dataLandDataSet.User_Table);
-
         }
     }
 }

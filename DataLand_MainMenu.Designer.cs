@@ -30,19 +30,20 @@ namespace DataLand
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataLand_MainMenu));
             this.MainMenu_Panel = new System.Windows.Forms.Panel();
-            this.User_DataGridView = new System.Windows.Forms.DataGridView();
             this.Top_Border = new System.Windows.Forms.Panel();
             this.Bottom_Border = new System.Windows.Forms.Panel();
             this.Right_Border = new System.Windows.Forms.Panel();
             this.Left_Panel = new System.Windows.Forms.Panel();
-            this.Exit_VoidButton = new DataLand.VoidButton();
-            this.DeleteUser_VoidButton = new DataLand.VoidButton();
-            this.UpdateUser_VoidButton = new DataLand.VoidButton();
-            this.AddUser_VoidButton = new DataLand.VoidButton();
             this.Main_Label = new System.Windows.Forms.Label();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.User_DataGridView = new System.Windows.Forms.DataGridView();
             this.dataLandDataSet = new DataLand.DataLandDataSet();
             this.userTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.user_TableTableAdapter = new DataLand.DataLandDataSetTableAdapters.User_TableTableAdapter();
@@ -51,10 +52,14 @@ namespace DataLand
             this.userSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userMailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Exit_VoidButton = new DataLand.VoidButton();
+            this.DeleteUser_VoidButton = new DataLand.VoidButton();
+            this.UpdateUser_VoidButton = new DataLand.VoidButton();
+            this.AddUser_VoidButton = new DataLand.VoidButton();
             this.MainMenu_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).BeginInit();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -72,26 +77,6 @@ namespace DataLand
             this.MainMenu_Panel.Name = "MainMenu_Panel";
             this.MainMenu_Panel.Size = new System.Drawing.Size(800, 400);
             this.MainMenu_Panel.TabIndex = 0;
-            // 
-            // User_DataGridView
-            // 
-            this.User_DataGridView.AutoGenerateColumns = false;
-            this.User_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.User_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.User_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.User_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userIDDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.userSurnameDataGridViewTextBoxColumn,
-            this.userPhoneDataGridViewTextBoxColumn,
-            this.userMailDataGridViewTextBoxColumn});
-            this.User_DataGridView.DataSource = this.userTableBindingSource;
-            this.User_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.User_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.User_DataGridView.Location = new System.Drawing.Point(176, 3);
-            this.User_DataGridView.Name = "User_DataGridView";
-            this.User_DataGridView.Size = new System.Drawing.Size(621, 394);
-            this.User_DataGridView.TabIndex = 4;
             // 
             // Top_Border
             // 
@@ -134,6 +119,125 @@ namespace DataLand
             this.Left_Panel.Name = "Left_Panel";
             this.Left_Panel.Size = new System.Drawing.Size(176, 400);
             this.Left_Panel.TabIndex = 0;
+            // 
+            // Main_Label
+            // 
+            this.Main_Label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Main_Label.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Main_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.Main_Label.Location = new System.Drawing.Point(0, 108);
+            this.Main_Label.Name = "Main_Label";
+            this.Main_Label.Size = new System.Drawing.Size(176, 32);
+            this.Main_Label.TabIndex = 1;
+            this.Main_Label.Text = "DataLand";
+            this.Main_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Logo_PictureBox
+            // 
+            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Logo_PictureBox.TabIndex = 0;
+            this.Logo_PictureBox.TabStop = false;
+            // 
+            // User_DataGridView
+            // 
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.User_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.User_DataGridView.AutoGenerateColumns = false;
+            this.User_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.User_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.User_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.User_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.User_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userIDDataGridViewTextBoxColumn,
+            this.userNameDataGridViewTextBoxColumn,
+            this.userSurnameDataGridViewTextBoxColumn,
+            this.userPhoneDataGridViewTextBoxColumn,
+            this.userMailDataGridViewTextBoxColumn});
+            this.User_DataGridView.DataSource = this.userTableBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.User_DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.User_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.User_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.User_DataGridView.Location = new System.Drawing.Point(176, 3);
+            this.User_DataGridView.Name = "User_DataGridView";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.User_DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.User_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.User_DataGridView.Size = new System.Drawing.Size(621, 394);
+            this.User_DataGridView.TabIndex = 4;
+            // 
+            // dataLandDataSet
+            // 
+            this.dataLandDataSet.DataSetName = "DataLandDataSet";
+            this.dataLandDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // userTableBindingSource
+            // 
+            this.userTableBindingSource.DataMember = "User_Table";
+            this.userTableBindingSource.DataSource = this.dataLandDataSet;
+            // 
+            // user_TableTableAdapter
+            // 
+            this.user_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // userIDDataGridViewTextBoxColumn
+            // 
+            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "User_ID";
+            this.userIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "User_Name";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // userSurnameDataGridViewTextBoxColumn
+            // 
+            this.userSurnameDataGridViewTextBoxColumn.DataPropertyName = "User_Surname";
+            this.userSurnameDataGridViewTextBoxColumn.HeaderText = "Surname";
+            this.userSurnameDataGridViewTextBoxColumn.Name = "userSurnameDataGridViewTextBoxColumn";
+            // 
+            // userPhoneDataGridViewTextBoxColumn
+            // 
+            this.userPhoneDataGridViewTextBoxColumn.DataPropertyName = "User_Phone";
+            this.userPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.userPhoneDataGridViewTextBoxColumn.Name = "userPhoneDataGridViewTextBoxColumn";
+            // 
+            // userMailDataGridViewTextBoxColumn
+            // 
+            this.userMailDataGridViewTextBoxColumn.DataPropertyName = "User_Mail";
+            this.userMailDataGridViewTextBoxColumn.HeaderText = "Mail";
+            this.userMailDataGridViewTextBoxColumn.Name = "userMailDataGridViewTextBoxColumn";
             // 
             // Exit_VoidButton
             // 
@@ -231,73 +335,6 @@ namespace DataLand
             this.AddUser_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddUser_VoidButton.UseVisualStyleBackColor = false;
             // 
-            // Main_Label
-            // 
-            this.Main_Label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Main_Label.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Main_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
-            this.Main_Label.Location = new System.Drawing.Point(0, 108);
-            this.Main_Label.Name = "Main_Label";
-            this.Main_Label.Size = new System.Drawing.Size(176, 32);
-            this.Main_Label.TabIndex = 1;
-            this.Main_Label.Text = "DataLand";
-            this.Main_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Logo_PictureBox
-            // 
-            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Logo_PictureBox.TabIndex = 0;
-            this.Logo_PictureBox.TabStop = false;
-            // 
-            // dataLandDataSet
-            // 
-            this.dataLandDataSet.DataSetName = "DataLandDataSet";
-            this.dataLandDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // userTableBindingSource
-            // 
-            this.userTableBindingSource.DataMember = "User_Table";
-            this.userTableBindingSource.DataSource = this.dataLandDataSet;
-            // 
-            // user_TableTableAdapter
-            // 
-            this.user_TableTableAdapter.ClearBeforeFill = true;
-            // 
-            // userIDDataGridViewTextBoxColumn
-            // 
-            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "User_ID";
-            this.userIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "User_Name";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // userSurnameDataGridViewTextBoxColumn
-            // 
-            this.userSurnameDataGridViewTextBoxColumn.DataPropertyName = "User_Surname";
-            this.userSurnameDataGridViewTextBoxColumn.HeaderText = "Surname";
-            this.userSurnameDataGridViewTextBoxColumn.Name = "userSurnameDataGridViewTextBoxColumn";
-            // 
-            // userPhoneDataGridViewTextBoxColumn
-            // 
-            this.userPhoneDataGridViewTextBoxColumn.DataPropertyName = "User_Phone";
-            this.userPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.userPhoneDataGridViewTextBoxColumn.Name = "userPhoneDataGridViewTextBoxColumn";
-            // 
-            // userMailDataGridViewTextBoxColumn
-            // 
-            this.userMailDataGridViewTextBoxColumn.DataPropertyName = "User_Mail";
-            this.userMailDataGridViewTextBoxColumn.HeaderText = "Mail";
-            this.userMailDataGridViewTextBoxColumn.Name = "userMailDataGridViewTextBoxColumn";
-            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -311,9 +348,9 @@ namespace DataLand
             this.Text = "DataLand";
             this.Load += new System.EventHandler(this.DataLand_MainMenu_Load);
             this.MainMenu_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).EndInit();
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).EndInit();
             this.ResumeLayout(false);
