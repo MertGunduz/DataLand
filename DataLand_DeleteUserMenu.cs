@@ -21,6 +21,7 @@ namespace DataLand
         private void DataLand_DeleteUserMenu_Load(object sender, EventArgs e)
         {
             oleDbConnection = new OleDbConnection(Database.databaseString);
+            UserID_TextBox.Text = Database.userID;
         }
 
         private void DeleteUserFromDatabase_Button_Click(object sender, EventArgs e)
