@@ -63,9 +63,89 @@ namespace DataLand.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DataLand_HoveredAddIcon {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_HoveredAddIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_HoveredDeleteIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_HoveredDeleteIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_HoveredExitIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_HoveredExitIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_HoveredUpdateIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_HoveredUpdateIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DataLand_MainTopLogoIcon {
             get {
                 object obj = ResourceManager.GetObject("DataLand_MainTopLogoIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_NonHoveredAddIcon {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_NonHoveredAddIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_NonHoveredDeleteIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_NonHoveredDeleteIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_NonHoveredExitIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_NonHoveredExitIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_NonHoveredUpdateIcon_png {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_NonHoveredUpdateIcon_png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
