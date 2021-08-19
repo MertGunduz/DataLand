@@ -41,14 +41,17 @@ namespace DataLand
             this.AddUser_VoidButton = new DataLand.VoidButton();
             this.Main_Label = new System.Windows.Forms.Label();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MainMenu_Panel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenu_Panel
             // 
             this.MainMenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.MainMenu_Panel.Controls.Add(this.dataGridView1);
             this.MainMenu_Panel.Controls.Add(this.Top_Border);
             this.MainMenu_Panel.Controls.Add(this.Bottom_Border);
             this.MainMenu_Panel.Controls.Add(this.Right_Border);
@@ -220,6 +223,17 @@ namespace DataLand
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.dataGridView1.Location = new System.Drawing.Point(176, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(621, 394);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -234,6 +248,7 @@ namespace DataLand
             this.MainMenu_Panel.ResumeLayout(false);
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,6 +266,7 @@ namespace DataLand
         private VoidButton DeleteUser_VoidButton;
         private VoidButton UpdateUser_VoidButton;
         private VoidButton AddUser_VoidButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
