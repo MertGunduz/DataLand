@@ -49,10 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="DataLandDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataLandDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataLand_AddUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataLand_AddUserMenu.Designer.cs">
+      <DependentUpon>DataLand_AddUserMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="DataLand_MainMenu.cs">
       <SubType>Form</SubType>
@@ -60,13 +67,25 @@
     <Compile Include="DataLand_MainMenu.Designer.cs">
       <DependentUpon>DataLand_MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataLand_UpdateUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataLand_UpdateUserMenu.Designer.cs">
+      <DependentUpon>DataLand_UpdateUserMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VoidButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="DataLand_AddUserMenu.resx">
+      <DependentUpon>DataLand_AddUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataLand_MainMenu.resx">
       <DependentUpon>DataLand_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataLand_UpdateUserMenu.resx">
+      <DependentUpon>DataLand_UpdateUserMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

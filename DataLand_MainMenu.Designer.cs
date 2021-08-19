@@ -183,6 +183,7 @@ namespace DataLand
             this.User_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.User_DataGridView.Size = new System.Drawing.Size(621, 394);
             this.User_DataGridView.TabIndex = 4;
+            this.User_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.User_DataGridView_CellClick);
             // 
             // dataLandDataSet
             // 

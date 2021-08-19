@@ -34,7 +34,15 @@ namespace DataLand
 
         private void UpdateUser_VoidButton_Click(object sender, EventArgs e)
         {
-
+            if (Database.userName != null || Database.userSurname != null || Database.userPhone != null || Database.userMail != null)
+            {
+                DataLand_UpdateUserMenu dataLand_UpdateUserMenu = new DataLand_UpdateUserMenu();
+                dataLand_UpdateUserMenu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Select A Row From Table By Clicking To A Row!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void DeleteUser_VoidButton_Click(object sender, EventArgs e)
@@ -45,6 +53,23 @@ namespace DataLand
         private void Exit_VoidButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void User_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int rowIndex = e.RowIndex;
+
+                Database.userName = User_DataGridView.Rows[rowIndex].Cells[1].Value.ToString();
+                Database.userSurname = User_DataGridView.Rows[rowIndex].Cells[2].Value.ToString();
+                Database.userPhone = User_DataGridView.Rows[rowIndex].Cells[3].Value.ToString();
+                Database.userMail = User_DataGridView.Rows[rowIndex].Cells[4].Value.ToString();
+            }
+            catch (Exception excetpion)
+            {
+                MessageBox.Show(excetpion.Message);
+            }
         }
     }
 }
