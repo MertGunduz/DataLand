@@ -16,5 +16,12 @@ namespace DataLand
         {
             InitializeComponent();
         }
+
+        private void DataLand_MainMenu_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataLandDataSet.User_Table' table. You can move, or remove it, as needed.
+            this.user_TableTableAdapter.Fill(this.dataLandDataSet.User_Table);
+
+        }
     }
 }

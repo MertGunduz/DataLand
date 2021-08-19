@@ -29,8 +29,10 @@ namespace DataLand
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataLand_MainMenu));
             this.MainMenu_Panel = new System.Windows.Forms.Panel();
+            this.User_DataGridView = new System.Windows.Forms.DataGridView();
             this.Top_Border = new System.Windows.Forms.Panel();
             this.Bottom_Border = new System.Windows.Forms.Panel();
             this.Right_Border = new System.Windows.Forms.Panel();
@@ -41,17 +43,26 @@ namespace DataLand
             this.AddUser_VoidButton = new DataLand.VoidButton();
             this.Main_Label = new System.Windows.Forms.Label();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataLandDataSet = new DataLand.DataLandDataSet();
+            this.userTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.user_TableTableAdapter = new DataLand.DataLandDataSetTableAdapters.User_TableTableAdapter();
+            this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userMailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainMenu_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).BeginInit();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenu_Panel
             // 
             this.MainMenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.MainMenu_Panel.Controls.Add(this.dataGridView1);
+            this.MainMenu_Panel.Controls.Add(this.User_DataGridView);
             this.MainMenu_Panel.Controls.Add(this.Top_Border);
             this.MainMenu_Panel.Controls.Add(this.Bottom_Border);
             this.MainMenu_Panel.Controls.Add(this.Right_Border);
@@ -61,6 +72,26 @@ namespace DataLand
             this.MainMenu_Panel.Name = "MainMenu_Panel";
             this.MainMenu_Panel.Size = new System.Drawing.Size(800, 400);
             this.MainMenu_Panel.TabIndex = 0;
+            // 
+            // User_DataGridView
+            // 
+            this.User_DataGridView.AutoGenerateColumns = false;
+            this.User_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.User_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.User_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.User_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userIDDataGridViewTextBoxColumn,
+            this.userNameDataGridViewTextBoxColumn,
+            this.userSurnameDataGridViewTextBoxColumn,
+            this.userPhoneDataGridViewTextBoxColumn,
+            this.userMailDataGridViewTextBoxColumn});
+            this.User_DataGridView.DataSource = this.userTableBindingSource;
+            this.User_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.User_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.User_DataGridView.Location = new System.Drawing.Point(176, 3);
+            this.User_DataGridView.Name = "User_DataGridView";
+            this.User_DataGridView.Size = new System.Drawing.Size(621, 394);
+            this.User_DataGridView.TabIndex = 4;
             // 
             // Top_Border
             // 
@@ -223,16 +254,49 @@ namespace DataLand
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
-            // dataGridView1
+            // dataLandDataSet
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.dataGridView1.Location = new System.Drawing.Point(176, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(621, 394);
-            this.dataGridView1.TabIndex = 4;
+            this.dataLandDataSet.DataSetName = "DataLandDataSet";
+            this.dataLandDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // userTableBindingSource
+            // 
+            this.userTableBindingSource.DataMember = "User_Table";
+            this.userTableBindingSource.DataSource = this.dataLandDataSet;
+            // 
+            // user_TableTableAdapter
+            // 
+            this.user_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // userIDDataGridViewTextBoxColumn
+            // 
+            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "User_ID";
+            this.userIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "User_Name";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // userSurnameDataGridViewTextBoxColumn
+            // 
+            this.userSurnameDataGridViewTextBoxColumn.DataPropertyName = "User_Surname";
+            this.userSurnameDataGridViewTextBoxColumn.HeaderText = "Surname";
+            this.userSurnameDataGridViewTextBoxColumn.Name = "userSurnameDataGridViewTextBoxColumn";
+            // 
+            // userPhoneDataGridViewTextBoxColumn
+            // 
+            this.userPhoneDataGridViewTextBoxColumn.DataPropertyName = "User_Phone";
+            this.userPhoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.userPhoneDataGridViewTextBoxColumn.Name = "userPhoneDataGridViewTextBoxColumn";
+            // 
+            // userMailDataGridViewTextBoxColumn
+            // 
+            this.userMailDataGridViewTextBoxColumn.DataPropertyName = "User_Mail";
+            this.userMailDataGridViewTextBoxColumn.HeaderText = "Mail";
+            this.userMailDataGridViewTextBoxColumn.Name = "userMailDataGridViewTextBoxColumn";
             // 
             // DataLand_MainMenu
             // 
@@ -245,10 +309,13 @@ namespace DataLand
             this.Name = "DataLand_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DataLand";
+            this.Load += new System.EventHandler(this.DataLand_MainMenu_Load);
             this.MainMenu_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).EndInit();
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,7 +333,15 @@ namespace DataLand
         private VoidButton DeleteUser_VoidButton;
         private VoidButton UpdateUser_VoidButton;
         private VoidButton AddUser_VoidButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView User_DataGridView;
+        private DataLandDataSet dataLandDataSet;
+        private System.Windows.Forms.BindingSource userTableBindingSource;
+        private DataLandDataSetTableAdapters.User_TableTableAdapter user_TableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userSurnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userMailDataGridViewTextBoxColumn;
     }
 }
 
