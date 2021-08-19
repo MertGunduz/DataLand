@@ -11,3 +11,4 @@ C:\Users\u\source\repos\DataLand\bin\Debug\DataLand.accdb
 C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.csproj.AssemblyReference.cache
 C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.DataLand_AddUserMenu.resources
 C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.DataLand_UpdateUserMenu.resources
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.DataLand_DeleteUserMenu.resources

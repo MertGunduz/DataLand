@@ -61,6 +61,12 @@
     <Compile Include="DataLand_AddUserMenu.Designer.cs">
       <DependentUpon>DataLand_AddUserMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataLand_DeleteUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataLand_DeleteUserMenu.Designer.cs">
+      <DependentUpon>DataLand_DeleteUserMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataLand_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="DataLand_AddUserMenu.resx">
       <DependentUpon>DataLand_AddUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataLand_DeleteUserMenu.resx">
+      <DependentUpon>DataLand_DeleteUserMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataLand_MainMenu.resx">
       <DependentUpon>DataLand_MainMenu.cs</DependentUpon>

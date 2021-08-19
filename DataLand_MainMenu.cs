@@ -47,7 +47,15 @@ namespace DataLand
 
         private void DeleteUser_VoidButton_Click(object sender, EventArgs e)
         {
-
+            if (Database.userName != null || Database.userSurname != null || Database.userPhone != null || Database.userMail != null)
+            {
+                DataLand_DeleteUserMenu dataLand_DeleteUserMenu = new DataLand_DeleteUserMenu();
+                dataLand_DeleteUserMenu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Select A Row From Table By Clicking To A Row!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ListUsers_VoidButton_Click(object sender, EventArgs e)
@@ -89,6 +97,7 @@ namespace DataLand
             oleDbDataAdapter.Fill(dataTable);
 
             User_DataGridView.DataSource = dataTable;
+            oleDbConnection.Close();
         }
     }
 }
