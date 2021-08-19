@@ -37,6 +37,10 @@ namespace DataLand
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.voidButton1 = new DataLand.VoidButton();
+            this.voidButton2 = new DataLand.VoidButton();
+            this.voidButton3 = new DataLand.VoidButton();
+            this.voidButton5 = new DataLand.VoidButton();
             this.MainMenu_Panel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +62,10 @@ namespace DataLand
             // Left_Panel
             // 
             this.Left_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.Left_Panel.Controls.Add(this.voidButton5);
+            this.Left_Panel.Controls.Add(this.voidButton3);
+            this.Left_Panel.Controls.Add(this.voidButton2);
+            this.Left_Panel.Controls.Add(this.voidButton1);
             this.Left_Panel.Controls.Add(this.label1);
             this.Left_Panel.Controls.Add(this.pictureBox1);
             this.Left_Panel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -116,6 +124,98 @@ namespace DataLand
             this.panel3.Size = new System.Drawing.Size(639, 3);
             this.panel3.TabIndex = 3;
             // 
+            // voidButton1
+            // 
+            this.voidButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voidButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.voidButton1.FlatAppearance.BorderSize = 0;
+            this.voidButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.voidButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.voidButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.voidButton1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.voidButton1.HoverPicture = null;
+            this.voidButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.voidButton1.Location = new System.Drawing.Point(0, 140);
+            this.voidButton1.Name = "voidButton1";
+            this.voidButton1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.voidButton1.Size = new System.Drawing.Size(158, 45);
+            this.voidButton1.TabIndex = 2;
+            this.voidButton1.Text = "Add User";
+            this.voidButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.voidButton1.UseVisualStyleBackColor = false;
+            // 
+            // voidButton2
+            // 
+            this.voidButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voidButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.voidButton2.FlatAppearance.BorderSize = 0;
+            this.voidButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.voidButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.voidButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.voidButton2.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.voidButton2.HoverPicture = null;
+            this.voidButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.voidButton2.Location = new System.Drawing.Point(0, 185);
+            this.voidButton2.Name = "voidButton2";
+            this.voidButton2.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.voidButton2.Size = new System.Drawing.Size(158, 45);
+            this.voidButton2.TabIndex = 3;
+            this.voidButton2.Text = "Update User";
+            this.voidButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.voidButton2.UseVisualStyleBackColor = false;
+            // 
+            // voidButton3
+            // 
+            this.voidButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voidButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.voidButton3.FlatAppearance.BorderSize = 0;
+            this.voidButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.voidButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.voidButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.voidButton3.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.voidButton3.HoverPicture = null;
+            this.voidButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.voidButton3.Location = new System.Drawing.Point(0, 230);
+            this.voidButton3.Name = "voidButton3";
+            this.voidButton3.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.voidButton3.Size = new System.Drawing.Size(158, 45);
+            this.voidButton3.TabIndex = 4;
+            this.voidButton3.Text = "Delete User";
+            this.voidButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.voidButton3.UseVisualStyleBackColor = false;
+            // 
+            // voidButton5
+            // 
+            this.voidButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.voidButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.voidButton5.FlatAppearance.BorderSize = 0;
+            this.voidButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.voidButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.voidButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.voidButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.voidButton5.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.voidButton5.HoverPicture = null;
+            this.voidButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.voidButton5.Location = new System.Drawing.Point(0, 355);
+            this.voidButton5.Name = "voidButton5";
+            this.voidButton5.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.voidButton5.Size = new System.Drawing.Size(158, 45);
+            this.voidButton5.TabIndex = 6;
+            this.voidButton5.Text = "Exit";
+            this.voidButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.voidButton5.UseVisualStyleBackColor = false;
+            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -143,6 +243,10 @@ namespace DataLand
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private VoidButton voidButton5;
+        private VoidButton voidButton3;
+        private VoidButton voidButton2;
+        private VoidButton voidButton1;
     }
 }
 
