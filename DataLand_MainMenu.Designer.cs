@@ -35,6 +35,8 @@ namespace DataLand
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.MainMenu_Panel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,6 +45,8 @@ namespace DataLand
             // MainMenu_Panel
             // 
             this.MainMenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.MainMenu_Panel.Controls.Add(this.panel3);
+            this.MainMenu_Panel.Controls.Add(this.panel2);
             this.MainMenu_Panel.Controls.Add(this.panel1);
             this.MainMenu_Panel.Controls.Add(this.Left_Panel);
             this.MainMenu_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -94,6 +98,24 @@ namespace DataLand
             this.panel1.Size = new System.Drawing.Size(3, 400);
             this.panel1.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(158, 397);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(639, 3);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(158, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(639, 3);
+            this.panel3.TabIndex = 3;
+            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -119,6 +141,8 @@ namespace DataLand
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
