@@ -92,6 +92,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataLand_MainTopLogoIcon.ico" />
+    <None Include="Resources\DataLand_NonHoveredUpdateIcon.png.png" />
+    <None Include="Resources\DataLand_NonHoveredExitIcon.png.png" />
+    <None Include="Resources\DataLand_NonHoveredDeleteIcon.png.png" />
+    <None Include="Resources\DataLand_NonHoveredAddIcon.png" />
+    <None Include="Resources\DataLand_HoveredUpdateIcon.png.png" />
+    <None Include="Resources\DataLand_HoveredExitIcon.png.png" />
+    <None Include="Resources\DataLand_HoveredDeleteIcon.png.png" />
+    <None Include="Resources\DataLand_HoveredAddIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
