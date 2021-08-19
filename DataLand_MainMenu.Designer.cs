@@ -51,11 +51,12 @@ namespace DataLand
             this.userSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userMailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.ListUsers_VoidButton = new DataLand.VoidButton();
             this.Exit_VoidButton = new DataLand.VoidButton();
             this.DeleteUser_VoidButton = new DataLand.VoidButton();
             this.UpdateUser_VoidButton = new DataLand.VoidButton();
             this.AddUser_VoidButton = new DataLand.VoidButton();
-            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.MainMenu_Panel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).BeginInit();
@@ -108,6 +109,7 @@ namespace DataLand
             // Left_Panel
             // 
             this.Left_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.Left_Panel.Controls.Add(this.ListUsers_VoidButton);
             this.Left_Panel.Controls.Add(this.Exit_VoidButton);
             this.Left_Panel.Controls.Add(this.DeleteUser_VoidButton);
             this.Left_Panel.Controls.Add(this.UpdateUser_VoidButton);
@@ -229,6 +231,42 @@ namespace DataLand
             this.userMailDataGridViewTextBoxColumn.HeaderText = "Mail";
             this.userMailDataGridViewTextBoxColumn.Name = "userMailDataGridViewTextBoxColumn";
             // 
+            // Logo_PictureBox
+            // 
+            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Logo_PictureBox.TabIndex = 0;
+            this.Logo_PictureBox.TabStop = false;
+            // 
+            // ListUsers_VoidButton
+            // 
+            this.ListUsers_VoidButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ListUsers_VoidButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListUsers_VoidButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ListUsers_VoidButton.FlatAppearance.BorderSize = 0;
+            this.ListUsers_VoidButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ListUsers_VoidButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ListUsers_VoidButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ListUsers_VoidButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.ListUsers_VoidButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.ListUsers_VoidButton.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.ListUsers_VoidButton.HoverPicture = global::DataLand.Properties.Resources.DataLand_HoveredListIcon;
+            this.ListUsers_VoidButton.Image = global::DataLand.Properties.Resources.DataLand_NonHoveredListIcon;
+            this.ListUsers_VoidButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ListUsers_VoidButton.Location = new System.Drawing.Point(0, 275);
+            this.ListUsers_VoidButton.Name = "ListUsers_VoidButton";
+            this.ListUsers_VoidButton.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.ListUsers_VoidButton.Size = new System.Drawing.Size(176, 45);
+            this.ListUsers_VoidButton.TabIndex = 7;
+            this.ListUsers_VoidButton.Text = "List Users";
+            this.ListUsers_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ListUsers_VoidButton.UseVisualStyleBackColor = false;
+            this.ListUsers_VoidButton.Click += new System.EventHandler(this.ListUsers_VoidButton_Click);
+            // 
             // Exit_VoidButton
             // 
             this.Exit_VoidButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -329,17 +367,6 @@ namespace DataLand
             this.AddUser_VoidButton.UseVisualStyleBackColor = false;
             this.AddUser_VoidButton.Click += new System.EventHandler(this.AddUser_VoidButton_Click);
             // 
-            // Logo_PictureBox
-            // 
-            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Logo_PictureBox.TabIndex = 0;
-            this.Logo_PictureBox.TabStop = false;
-            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -384,6 +411,7 @@ namespace DataLand
         private System.Windows.Forms.DataGridViewTextBoxColumn userSurnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userPhoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userMailDataGridViewTextBoxColumn;
+        private VoidButton ListUsers_VoidButton;
     }
 }
 

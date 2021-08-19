@@ -93,6 +93,16 @@ namespace DataLand.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DataLand_HoveredListIcon {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_HoveredListIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DataLand_HoveredUpdateIcon_png {
             get {
                 object obj = ResourceManager.GetObject("DataLand_HoveredUpdateIcon_png", resourceCulture);
@@ -136,6 +146,16 @@ namespace DataLand.Properties {
         internal static System.Drawing.Bitmap DataLand_NonHoveredExitIcon_png {
             get {
                 object obj = ResourceManager.GetObject("DataLand_NonHoveredExitIcon_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataLand_NonHoveredListIcon {
+            get {
+                object obj = ResourceManager.GetObject("DataLand_NonHoveredListIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

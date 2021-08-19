@@ -130,6 +130,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataLand_MainTopLogoIcon.ico" />
+    <None Include="Resources\DataLand_NonHoveredListIcon.png" />
+    <None Include="Resources\DataLand_HoveredListIcon.png" />
     <None Include="Resources\DataLand_NonHoveredUpdateIcon.png.png" />
     <None Include="Resources\DataLand_NonHoveredExitIcon.png.png" />
     <None Include="Resources\DataLand_NonHoveredDeleteIcon.png.png" />

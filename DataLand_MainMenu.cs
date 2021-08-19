@@ -23,7 +23,7 @@ namespace DataLand
         private void DataLand_MainMenu_Load(object sender, EventArgs e)
         {
             oleDbConnection = new OleDbConnection(Database.databaseString);
-            this.user_TableTableAdapter.Fill(this.dataLandDataSet.User_Table);
+            ListTable();
         }
 
         private void AddUser_VoidButton_Click(object sender, EventArgs e)
@@ -50,6 +50,11 @@ namespace DataLand
 
         }
 
+        private void ListUsers_VoidButton_Click(object sender, EventArgs e)
+        {
+            ListTable();
+        }
+
         private void Exit_VoidButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -61,6 +66,7 @@ namespace DataLand
             {
                 int rowIndex = e.RowIndex;
 
+                Database.userID = User_DataGridView.Rows[rowIndex].Cells[0].Value.ToString();
                 Database.userName = User_DataGridView.Rows[rowIndex].Cells[1].Value.ToString();
                 Database.userSurname = User_DataGridView.Rows[rowIndex].Cells[2].Value.ToString();
                 Database.userPhone = User_DataGridView.Rows[rowIndex].Cells[3].Value.ToString();
@@ -70,6 +76,19 @@ namespace DataLand
             {
                 MessageBox.Show(excetpion.Message);
             }
+        }
+
+        private void ListTable()
+        {
+            oleDbConnection.Open();
+
+            DataTable dataTable = new DataTable();
+
+            OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter();
+            oleDbDataAdapter.SelectCommand = new OleDbCommand("Select * From User_Table", oleDbConnection);
+            oleDbDataAdapter.Fill(dataTable);
+
+            User_DataGridView.DataSource = dataTable;
         }
     }
 }
