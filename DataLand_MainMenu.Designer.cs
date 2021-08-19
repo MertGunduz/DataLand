@@ -334,6 +334,7 @@ namespace DataLand
             this.AddUser_VoidButton.Text = "Add User";
             this.AddUser_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddUser_VoidButton.UseVisualStyleBackColor = false;
+            this.AddUser_VoidButton.Click += new System.EventHandler(this.AddUser_VoidButton_Click);
             // 
             // DataLand_MainMenu
             // 
