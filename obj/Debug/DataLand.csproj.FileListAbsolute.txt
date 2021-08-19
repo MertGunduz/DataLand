@@ -1,0 +1,9 @@
+C:\Users\u\source\repos\DataLand\bin\Debug\DataLand.exe.config
+C:\Users\u\source\repos\DataLand\bin\Debug\DataLand.exe
+C:\Users\u\source\repos\DataLand\bin\Debug\DataLand.pdb
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.DataLand_MainMenu.resources
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.Properties.Resources.resources
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.csproj.GenerateResource.cache
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.csproj.CoreCompileInputs.cache
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.exe
+C:\Users\u\source\repos\DataLand\obj\Debug\DataLand.pdb
