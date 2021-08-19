@@ -13,6 +13,7 @@ namespace DataLand
 
         // Images
         private Image hoverPicture;
+        private Image nonHoveredPicture;
 
         [
             Category("Hover Options"),
@@ -78,6 +79,7 @@ namespace DataLand
         // Hover Method
         protected override void OnMouseEnter(EventArgs e)
         {
+            nonHoveredPicture = this.Image;
             this.ForeColor = HoverForeColor;
             this.Image = hoverPicture;
         }
@@ -86,7 +88,7 @@ namespace DataLand
         protected override void OnMouseLeave(EventArgs e)
         {
             this.ForeColor = nonHoverForeColor;
-            this.Image = this.Image;
+            this.Image = nonHoveredPicture;
         }
     }
 }
