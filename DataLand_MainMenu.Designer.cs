@@ -42,7 +42,6 @@ namespace DataLand
             this.Right_Border = new System.Windows.Forms.Panel();
             this.Left_Panel = new System.Windows.Forms.Panel();
             this.Main_Label = new System.Windows.Forms.Label();
-            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.User_DataGridView = new System.Windows.Forms.DataGridView();
             this.dataLandDataSet = new DataLand.DataLandDataSet();
             this.userTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -56,12 +55,13 @@ namespace DataLand
             this.DeleteUser_VoidButton = new DataLand.VoidButton();
             this.UpdateUser_VoidButton = new DataLand.VoidButton();
             this.AddUser_VoidButton = new DataLand.VoidButton();
+            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.MainMenu_Panel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenu_Panel
@@ -131,17 +131,6 @@ namespace DataLand
             this.Main_Label.TabIndex = 1;
             this.Main_Label.Text = "DataLand";
             this.Main_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Logo_PictureBox
-            // 
-            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Logo_PictureBox.TabIndex = 0;
-            this.Logo_PictureBox.TabStop = false;
             // 
             // User_DataGridView
             // 
@@ -262,6 +251,7 @@ namespace DataLand
             this.Exit_VoidButton.Text = "Exit";
             this.Exit_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Exit_VoidButton.UseVisualStyleBackColor = false;
+            this.Exit_VoidButton.Click += new System.EventHandler(this.Exit_VoidButton_Click);
             // 
             // DeleteUser_VoidButton
             // 
@@ -286,6 +276,7 @@ namespace DataLand
             this.DeleteUser_VoidButton.Text = "Delete User";
             this.DeleteUser_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DeleteUser_VoidButton.UseVisualStyleBackColor = false;
+            this.DeleteUser_VoidButton.Click += new System.EventHandler(this.DeleteUser_VoidButton_Click);
             // 
             // UpdateUser_VoidButton
             // 
@@ -310,6 +301,7 @@ namespace DataLand
             this.UpdateUser_VoidButton.Text = "Update User";
             this.UpdateUser_VoidButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UpdateUser_VoidButton.UseVisualStyleBackColor = false;
+            this.UpdateUser_VoidButton.Click += new System.EventHandler(this.UpdateUser_VoidButton_Click);
             // 
             // AddUser_VoidButton
             // 
@@ -336,6 +328,17 @@ namespace DataLand
             this.AddUser_VoidButton.UseVisualStyleBackColor = false;
             this.AddUser_VoidButton.Click += new System.EventHandler(this.AddUser_VoidButton_Click);
             // 
+            // Logo_PictureBox
+            // 
+            this.Logo_PictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_PictureBox.Image = global::DataLand.Properties.Resources.DataLand_MainTopLogoIcon;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(176, 108);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Logo_PictureBox.TabIndex = 0;
+            this.Logo_PictureBox.TabStop = false;
+            // 
             // DataLand_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -350,10 +353,10 @@ namespace DataLand
             this.Load += new System.EventHandler(this.DataLand_MainMenu_Load);
             this.MainMenu_Panel.ResumeLayout(false);
             this.Left_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.User_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLandDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

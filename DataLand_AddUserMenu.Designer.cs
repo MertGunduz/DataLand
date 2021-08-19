@@ -37,7 +37,7 @@ namespace DataLand
             this.Surname_TextBox = new System.Windows.Forms.TextBox();
             this.UserPhone_TextBox = new System.Windows.Forms.TextBox();
             this.UserMail_TextBox = new System.Windows.Forms.TextBox();
-            this.voidButton1 = new DataLand.VoidButton();
+            this.AddUserToDatabase_Button = new DataLand.VoidButton();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +45,7 @@ namespace DataLand
             // Mid_Panel
             // 
             this.Mid_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Mid_Panel.Controls.Add(this.voidButton1);
+            this.Mid_Panel.Controls.Add(this.AddUserToDatabase_Button);
             this.Mid_Panel.Controls.Add(this.UserMail_TextBox);
             this.Mid_Panel.Controls.Add(this.UserPhone_TextBox);
             this.Mid_Panel.Controls.Add(this.Surname_TextBox);
@@ -85,60 +85,69 @@ namespace DataLand
             // 
             this.Username_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.Username_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Username_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
             this.Username_TextBox.Location = new System.Drawing.Point(12, 156);
             this.Username_TextBox.Name = "Username_TextBox";
             this.Username_TextBox.Size = new System.Drawing.Size(326, 27);
             this.Username_TextBox.TabIndex = 3;
+            this.Username_TextBox.Text = "  Name:";
             // 
             // Surname_TextBox
             // 
             this.Surname_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.Surname_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Surname_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
             this.Surname_TextBox.Location = new System.Drawing.Point(12, 214);
             this.Surname_TextBox.Name = "Surname_TextBox";
             this.Surname_TextBox.Size = new System.Drawing.Size(326, 27);
             this.Surname_TextBox.TabIndex = 4;
+            this.Surname_TextBox.Text = "  Surname:";
             // 
             // UserPhone_TextBox
             // 
             this.UserPhone_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.UserPhone_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserPhone_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
             this.UserPhone_TextBox.Location = new System.Drawing.Point(12, 272);
             this.UserPhone_TextBox.Name = "UserPhone_TextBox";
             this.UserPhone_TextBox.Size = new System.Drawing.Size(326, 27);
             this.UserPhone_TextBox.TabIndex = 5;
+            this.UserPhone_TextBox.Text = "  Phone:";
             // 
             // UserMail_TextBox
             // 
             this.UserMail_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.UserMail_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserMail_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
             this.UserMail_TextBox.Location = new System.Drawing.Point(12, 330);
             this.UserMail_TextBox.Name = "UserMail_TextBox";
             this.UserMail_TextBox.Size = new System.Drawing.Size(326, 27);
             this.UserMail_TextBox.TabIndex = 6;
+            this.UserMail_TextBox.Text = "  Mail:";
             // 
-            // voidButton1
+            // AddUserToDatabase_Button
             // 
-            this.voidButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.voidButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.voidButton1.FlatAppearance.BorderSize = 0;
-            this.voidButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.voidButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.voidButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.voidButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.voidButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
-            this.voidButton1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
-            this.voidButton1.HoverPicture = global::DataLand.Properties.Resources.DataLand_HoveredAddIcon;
-            this.voidButton1.Image = global::DataLand.Properties.Resources.DataLand_NonHoveredAddIcon;
-            this.voidButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.voidButton1.Location = new System.Drawing.Point(12, 388);
-            this.voidButton1.Name = "voidButton1";
-            this.voidButton1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.voidButton1.Size = new System.Drawing.Size(326, 40);
-            this.voidButton1.TabIndex = 7;
-            this.voidButton1.Text = "Add User To Database";
-            this.voidButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.voidButton1.UseVisualStyleBackColor = false;
+            this.AddUserToDatabase_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.AddUserToDatabase_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddUserToDatabase_Button.FlatAppearance.BorderSize = 0;
+            this.AddUserToDatabase_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.AddUserToDatabase_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.AddUserToDatabase_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddUserToDatabase_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.AddUserToDatabase_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(234)))));
+            this.AddUserToDatabase_Button.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(173)))), ((int)(((byte)(254)))));
+            this.AddUserToDatabase_Button.HoverPicture = global::DataLand.Properties.Resources.DataLand_HoveredAddIcon;
+            this.AddUserToDatabase_Button.Image = global::DataLand.Properties.Resources.DataLand_NonHoveredAddIcon;
+            this.AddUserToDatabase_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddUserToDatabase_Button.Location = new System.Drawing.Point(12, 388);
+            this.AddUserToDatabase_Button.Name = "AddUserToDatabase_Button";
+            this.AddUserToDatabase_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.AddUserToDatabase_Button.Size = new System.Drawing.Size(326, 40);
+            this.AddUserToDatabase_Button.TabIndex = 7;
+            this.AddUserToDatabase_Button.Text = "Add User To Database";
+            this.AddUserToDatabase_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddUserToDatabase_Button.UseVisualStyleBackColor = false;
+            this.AddUserToDatabase_Button.Click += new System.EventHandler(this.AddUserToDatabase_Button_Click);
             // 
             // DataLand_AddUserMenu
             // 
@@ -151,6 +160,7 @@ namespace DataLand
             this.Name = "DataLand_AddUserMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DataLand_AddUserMenu";
+            this.Load += new System.EventHandler(this.DataLand_AddUserMenu_Load);
             this.Mid_Panel.ResumeLayout(false);
             this.Mid_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
@@ -167,6 +177,6 @@ namespace DataLand
         private System.Windows.Forms.TextBox UserMail_TextBox;
         private System.Windows.Forms.TextBox UserPhone_TextBox;
         private System.Windows.Forms.TextBox Surname_TextBox;
-        private VoidButton voidButton1;
+        private VoidButton AddUserToDatabase_Button;
     }
 }

@@ -28,7 +28,23 @@ namespace DataLand
 
         private void AddUser_VoidButton_Click(object sender, EventArgs e)
         {
+            DataLand_AddUserMenu dataLand_AddUserMenu = new DataLand_AddUserMenu();
+            dataLand_AddUserMenu.Show();
+        }
 
+        private void UpdateUser_VoidButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteUser_VoidButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_VoidButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
