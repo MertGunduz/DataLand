@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLandDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataLandDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataLand_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +78,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataLandDataSet1.xsc">
+      <DependentUpon>DataLandDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataLandDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataLandDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataLandDataSet1.xss">
+      <DependentUpon>DataLandDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +107,9 @@
     <None Include="Resources\DataLand_MainTopLogoIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataLand.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="DataLand_MainTopLogoIcon.ico" />
     <None Include="Resources\DataLand_NonHoveredUpdateIcon.png.png" />
     <None Include="Resources\DataLand_NonHoveredExitIcon.png.png" />
